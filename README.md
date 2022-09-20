@@ -25,7 +25,7 @@ POST -http://localhost:5582/api/reservation/insert
 {
     "name": "Daniel de Jesus",
     "email": "daniel@email.com",
-    "phone": "+5548996521079",
+    "phone": "+5548999999999",
     "reservationroom":{
         "bookedfrom": "2022-09-20",
         "bookedto": "2022-09-30",
@@ -40,7 +40,7 @@ PUT - http://localhost:5582/api/reservation/update
     "id":1,
     "name": "Daniel",
     "email": "daniel@email.com.br",
-    "phone": "+5548996521079",
+    "phone": "+5548999999999",
     "reservationroom":{
         "id":1,
         "bookedfrom": "2022-09-21",
