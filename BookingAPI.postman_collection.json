@@ -1,0 +1,115 @@
+{
+	"info": {
+		"_postman_id": "6477452c-61f0-4903-bc92-51544029e9a4",
+		"name": "BookingAPI",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3309652"
+	},
+	"item": [
+		{
+			"name": "insert",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Daniel\",\r\n    \"email\": \"daniel@email.com\",\r\n    \"phone\": \"+5548999999999\",\r\n    \"reservationroom\":{\r\n        \"bookedfrom\": \"2022-09-20\",\r\n        \"bookedto\": \"2022-09-30\",\r\n        \"room\": {\r\n            \"id\":1\r\n        }\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5582/api/reservation/insert",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5582",
+					"path": [
+						"api",
+						"reservation",
+						"insert"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "available-room",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5582/api/reservation/available-room/2022-09-26/2022-09-27",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5582",
+					"path": [
+						"api",
+						"reservation",
+						"available-room",
+						"2022-09-26",
+						"2022-09-27"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":1,\r\n    \"name\": \"Daniel\",\r\n    \"email\": \"daniel@email.com.br\",\r\n    \"phone\": \"+5548999999999\",\r\n    \"reservationroom\":{\r\n        \"id\":1,\r\n        \"bookedfrom\": \"2022-09-21\",\r\n        \"bookedto\": \"2022-09-30\",\r\n        \"room\": {\r\n            \"id\":1\r\n        }\r\n    }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5582/api/reservation/update",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5582",
+					"path": [
+						"api",
+						"reservation",
+						"update"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cancel",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5582/api/reservation/cancel/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5582",
+					"path": [
+						"api",
+						"reservation",
+						"cancel",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

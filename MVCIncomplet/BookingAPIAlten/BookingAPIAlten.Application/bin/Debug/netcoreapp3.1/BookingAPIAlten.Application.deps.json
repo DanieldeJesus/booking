@@ -1,0 +1,49 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "BookingAPIAlten.Application/1.0.0": {
+        "dependencies": {
+          "BookingAPIAlten.Domain": "1.0.0"
+        },
+        "runtime": {
+          "BookingAPIAlten.Application.dll": {}
+        }
+      },
+      "BookingAPIAlten.Core/1.0.0": {
+        "runtime": {
+          "BookingAPIAlten.Core.dll": {}
+        }
+      },
+      "BookingAPIAlten.Domain/1.0.0": {
+        "dependencies": {
+          "BookingAPIAlten.Core": "1.0.0"
+        },
+        "runtime": {
+          "BookingAPIAlten.Domain.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "BookingAPIAlten.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BookingAPIAlten.Core/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "BookingAPIAlten.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

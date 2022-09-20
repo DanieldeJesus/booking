@@ -1,0 +1,10 @@
+C:\Users\p22\Pictures\BookingAPIAlten\BookingAPIAlten.Core\obj\Debug\netcoreapp3.1\BookingAPIAlten.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\p22\Pictures\BookingAPIAlten\BookingAPIAlten.Core\obj\Debug\netcoreapp3.1\BookingAPIAlten.Core.AssemblyInfoInputs.cache
+C:\Users\p22\Pictures\BookingAPIAlten\BookingAPIAlten.Core\obj\Debug\netcoreapp3.1\BookingAPIAlten.Core.AssemblyInfo.cs
+C:\Users\p22\Pictures\BookingAPIAlten\BookingAPIAlten.Core\obj\Debug\netcoreapp3.1\BookingAPIAlten.Core.csproj.CoreCompileInputs.cache
+C:\Users\p22\Pictures\BookingAPIAlten\BookingAPIAlten.Core\bin\Debug\netcoreapp3.1\BookingAPIAlten.Core.deps.json
+C:\Users\p22\Pictures\BookingAPIAlten\BookingAPIAlten.Core\bin\Debug\netcoreapp3.1\BookingAPIAlten.Core.dll
+C:\Users\p22\Pictures\BookingAPIAlten\BookingAPIAlten.Core\bin\Debug\netcoreapp3.1\BookingAPIAlten.Core.pdb
+C:\Users\p22\Pictures\BookingAPIAlten\BookingAPIAlten.Core\obj\Debug\netcoreapp3.1\BookingAPIAlten.Core.dll
+C:\Users\p22\Pictures\BookingAPIAlten\BookingAPIAlten.Core\obj\Debug\netcoreapp3.1\BookingAPIAlten.Core.pdb
+C:\Users\p22\Pictures\BookingAPIAlten\BookingAPIAlten.Core\obj\Debug\netcoreapp3.1\BookingAPIAlten.Core.csproj.AssemblyReference.cache

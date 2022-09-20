@@ -1,0 +1,116 @@
+﻿@model IEnumerable<BookingAPIAlten.Application.ViewModels.ReservationViewModel>
+
+@{
+    ViewData["Title"] = "Room";
+}
+<style>
+    h4 {
+        font-weight: 600;
+    }
+
+    p {
+        font-size: 12px;
+        margin-top: 5px;
+    }
+
+    .price {
+        font-size: 30px;
+        margin: 0 auto;
+        color: #333;
+    }
+
+    .right {
+        float: right;
+        border-bottom: 2px solid #4B8E4B;
+    }
+
+    .thumbnail {
+        opacity: 0.70;
+        -webkit-transition: all 0.5s;
+        transition: all 0.5s;
+    }
+
+        .thumbnail:hover {
+            opacity: 1.00;
+            box-shadow: 0px 0px 10px #4bc6ff;
+        }
+
+    .line {
+        margin-bottom: 5px;
+    }
+
+    @@media screen and (max-width: 770px) {
+        .right {
+            float: left;
+            width: 100%;
+        }
+    }
+
+    .product_view .modal-dialog {
+        max-width: 800px;
+        width: 100%;
+    }
+
+    .pre-cost {
+        text-decoration: line-through;
+        color: #a5a5a5;
+    }
+
+    .space-ten {
+        padding: 10px 0;
+    }
+</style>
+<div class="container">
+
+    <h1>Rooms</h1>
+    <hr />
+
+    <div class="row">
+        <div class="col-md-4">
+            <form method="get" asp-controller="Reservation" asp-action="AvailableRoom">
+                <h4 class="mb-3">Search Available Room</h4>
+                <hr class="mb-4">
+                <div class="row">
+                    <div class="col-md-3 mb-3">
+                        <label>From</label>
+                        <input id="from" name="from" asp- type="text" class="form-control" placeholder="" required="">
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <label>To</label>
+                        <input id="to" name="to" type="text" class="form-control" placeholder="" required="">
+                    </div>
+                </div>
+                <hr class="mb-4">
+                <button class="btn btn-primary btn-lg btn-block" type="submit">Search</button>
+            </form>
+        </div>
+    </div>
+    <hr />
+    <h4 class="mb-3">Reservations To Edit</h4>
+    <hr class="mb-4">
+    <div class="row">
+        <!-- BEGIN ROOMS TO EDIT -->
+        @{
+            foreach (var room in Model)
+            {
+                <div class="col-md-3 col-sm-6">
+                    <span class="thumbnail">
+                        <a asp-controller="Reservation" asp-action="ReserveEdite" asp-route-id="@room.Id"><img width="200" height="200" src="~/Images/beds.jpg" /></a>
+                        <h4>@room.Name</h4>
+                        <p>FROM @room.Booking.BookedFrom.ToString("dd/MM/yyy")</p>
+                        <p>TO @room.Booking.BookedTo.ToString("dd/MM/yyy")</p>
+                        <hr class="line">
+                        <div class="row">
+                            <div class="col-md-6 col-sm-6">
+                                <p class="price">$ 2.000</p>
+                            </div>
+                        </div>
+                    </span>
+                </div>
+            }
+        }
+
+        <!-- BEGIN ROOMS TO EDIT -->
+    </div>
+</div>
+
